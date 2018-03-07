@@ -1,0 +1,107 @@
+/*-- Color --*/
+.black-back  { background-color: #000000 !important; }
+.white-back  { background-color: #ffffff !important; }
+.blue-back   { background-color: #132d50 !important; }
+
+.black-letter{ color: #000000 !important; }
+.white-letter{ color: #ffffff !important; }
+.blue-letter { color: #132d50 !important; }
+
+.bg-post  { background-color: white !important; }
+
+.b-01{ border: 1px solid #f00; }
+.b-02{ border: 1px solid #0f0; }
+.b-03{ border: 1px solid #00f; }
+.b-ff{ border: 1px solid #fff; }
+.b-00{ border: 1px solid #000; }
+/*--------------------------------------------------------------*/
+
+.logo-principal{
+    padding-top: 20px !important;
+    font-family: buttercup !important;
+    text-transform: lowercase !important;
+    font-size: 40px;
+}
+.titulo-princilal{
+    font-size: 80%;
+    font-weight:700;
+    font-family: LyonTextRegular;
+    letter-spacing: .1em;
+}
+
+.titulo-filosofia{
+    font-family: Serveticac;
+    font-size: 350%;
+    font-weight:500;
+}
+
+.descripcion-filosofia{
+   font-size: 125%;
+   font-family: GeosansLight;
+   font-weight: 500;
+}
+
+.read-more{
+    font-weight: 400;
+    font-size: 120%;
+}
+
+.boton-read{
+     margin-top: 5%;
+     border-style: solid;
+     border-width: 1px;
+     border-color:  #132d50;
+}
+
+.boton-read:hover{
+   background-color: #132d50;
+   color: #ffffff !important;
+}
+
+.btn-xs{
+    padding: 0rem 2rem;
+    font-size: 75%;
+}
+
+.post-date{
+    font-size: 75% !important;
+    color: #132d50;
+    margin-bottom: 4% ;
+}
+
+.post-titulo{
+    font-family: CaviarDreams;
+    /*text-transform: lowercase !important;*/
+    /*font-weight: 200;*/
+}
+
+.ultimos-titulo{
+    font-family: CaviarDreams;
+    font-weight: 600;
+    color: #132d50 ;
+    /*text-transform: uppercase; */
+}
+
+.post-cuerpo{
+    font-family: GeosansLight;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.fecha{
+    font-family: CaviarDreams;
+    color: #132d50 ;
+    font-weight: 500 !important; 
+    
+}
+.content-foto{
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-gallery-thumbnail{
+    object-fit: cover;
+    width: 100%;
+    height:350px;
+}

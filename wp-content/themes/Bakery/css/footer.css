@@ -1,0 +1,71 @@
+:root{
+    --color-01: #132d50;
+}
+
+.footer-bakery{
+    padding: 6em 0;
+}
+
+.footer-container{
+    background-color: var(--color-01);
+    height:500px;
+    width:100%;
+}
+
+.footer-row{
+}
+
+p.p-style{
+    color: #fff;
+}
+
+.logo-footer{
+    font-family: buttercup !important;
+    text-transform: lowercase !important;
+    font-size: 35px;
+}
+
+.rrss-icon{
+    padding: 20px;
+}
+
+.fa-facebook-f:hover {
+    color: #3795e0 !important;
+}
+
+.fa-instagram:hover {
+    color: #d43089 !important;
+}
+
+.fa-tripadvisor:hover {
+    color: #eaca65 !important;
+}
+
+.fa-twitter:hover {
+    color: #0ed3ec !important;
+}
+
+a:link{ 
+    text-decoration:none; 
+} 
+
+.cliente1{
+    background-image: url(img/cliente1.png);
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
+li.li-f {
+    display:  block;
+    width:  100%;
+    text-align:  left;
+    padding-left:  50px;
+    padding-bottom: 20px;
+}
+
+/*.btn { display: inline-block; padding: 14px 30px; margin-bottom: 0; font-size: 13px; font-weight: 800; */
+/*    letter-spacing: 1px; line-height: 1.42857143; text-align: center; border: none; */
+/*    text-transform: uppercase; border-radius: 100px;font-family: 'Montserrat', sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;}*/
+/*.btn-default { color: #fff; background-color: #aa9144; }*/
+/*.btn-default:hover { color: #fff; background-color: #8e7424; border-color: #8e7424; }*/
+/*.btn-default.focus, .btn-default:focus { color: #fff; background-color: #E3AA96; border-color: #8e7424; }*/

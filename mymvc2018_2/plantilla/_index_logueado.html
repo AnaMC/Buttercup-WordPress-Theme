@@ -1,0 +1,16 @@
+{{header}}
+    <div style="max-width:600px;margin: 50px auto 0;">
+        <h1 class="h2 text-light text-center push-top-bottom animation-slideDown">
+            <i class="fa fa-lock"></i> Estas logueado
+        </h1>
+        <h2 class="h2 text-light text-center push-top-bottom animation-slideDown">{{mensaje}}</h2>
+        <div class="block animation-fadeInQuickInv">
+            <div class="text-center"><img class="foto_avastar" src="index.php?ruta=index&accion=veravatar"></div>
+            {{fotopo}}
+            <h2>Hola {{correo}}</h2>
+            <h2><a href="?accion=editarusuario&id={{id}}">Editar usuario</a></h2>
+            {{indexadministrador}}
+            <h2><a href="?accion=cerrarsesion">Cerrar sesión</a></h2>
+        </div>
+    </div>
+{{footer}}

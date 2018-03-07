@@ -1,0 +1,53 @@
+{{header}}
+    <div style="max-width:800px;margin: 50px auto 0;">
+                <h1 class="h2 text-light text-center push-top-bottom animation-slideDown">
+            <i class="fa fa-user-plus"></i> Nuevo cliente
+        </h1>
+        <div class="block animation-fadeInQuickInv">
+                    <form action="index.php?accion=doinsertarCliente&ruta=client" method="post" id="form-login" class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-xs-6">
+                                <input class="form-control"  type="text" name="name" placeholder="Nombre"/>
+                            </div>
+                            
+                            <div class="col-xs-6">
+                                <input class="form-control"  type="text" name="surname" placeholder="Apellidos"/>
+                            </div>
+                            
+                            <div class="col-xs-6">
+                                <input class="form-control"  type="text" name="tin" placeholder="CIF"/>
+                            </div>
+                            
+                            <div class="col-xs-6">
+                                <input class="form-control"  type="text" name="address" placeholder="Dirección"/>
+                            </div>
+                            
+                            <div class="col-xs-6">
+                                <input class="form-control"  type="text" name="location" placeholder="Población"/>
+                            </div>
+                            
+                            <div class="col-xs-6">
+                                <input class="form-control"  type="text" name="province" placeholder="Provincia"/>
+                            </div>
+                            
+                            <div class="col-xs-6">
+                                <input class="form-control"  type="text" name="postalcode" placeholder="Codigo Postal"/>
+                            </div>
+                            
+                            <div class="col-xs-6">
+                                <input class="form-control"  type="text" name="email" placeholder="Correo"/>
+                            </div>
+                            
+                        </div>
+                      <!--  <input type="hidden" name="accion" value="doinsertarCliente"> -->
+                     <!--   <input type="hidden" name="ruta" value="client"> -->
+                <div class="form-group">
+                    <div class="col-xs-12 text-center">
+                            <input class="btn btn-effect-ripple btn-sm btn-primary" type="submit" value="Guardar"/>
+                            <input class="btn btn-effect-ripple btn-sm btn-danger" type="submit" formaction="?ruta=client&accion=listaCliente" value="Cancelar"/>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+</div>
+{{footer}}

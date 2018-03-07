@@ -1,0 +1,14 @@
+@import url("css/font.css");
+@import url("vendor/bootstrap/css/bootstrap.min.css");
+@import url("vendor/font-awesome/css/font-awesome.min.css");
+@import url("vendor/magnific-popup/magnific-popup.css");
+@import url("css/agency.min.css");
+@import url("css/creative.css");
+@import url("css/xyz.css");
+@import url("css/index.css");
+@import url("css/front-page.css");
+@import url("css/contact.css");
+@import url("css/footer.css");
+@import url("css/product.css");
+
+/* los css de las paginas los metemos en la carpeta de css y lo importamos aqui*/

@@ -1,0 +1,48 @@
+body {
+    font: 24px Helvetica;
+    background: #999999;
+}
+
+#main {
+    min-height: 90%;
+    display: flex;
+    flex-flow: row;
+}
+
+#main>article {
+    background: #dddd88;
+    flex: 3 1 80%;
+    order: 2;
+}
+
+#main>nav {
+    background: #ccccff;
+    flex: 1 6 20%;
+    order: 1;
+}
+
+header{
+    display: flex;
+    min-height: 10%;
+    background: #ffeebb;
+}
+
+@media all and (max-width: 640px) {
+    #main,
+    #page {
+        flex-flow: column;
+    }
+
+    #main>article,
+    #main>nav,
+    #main>aside {
+        order: 0;
+    }
+
+    #main>nav,
+    #main>aside,
+    header{
+        min-height: 50px;
+        max-height: 50px;
+    }
+}

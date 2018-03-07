@@ -1,0 +1,120 @@
+.bg-side {
+    background-color: #d9a391 !important; 
+}
+
+.sidebarB { 
+    margin-bottom: 10px ; 
+    background-color: #d9a391 ; 
+    padding: 30px; border-radius: 2px ; 
+} 
+
+.sidebarB-title { 
+    margin-bottom: 20px; 
+}
+
+.sidebarB ul li { 
+    margin-bottom: 16px; 
+    line-height: 18px;
+}
+.sidebarB ul li:last-child { 
+    margin-bottom: 0px; 
+}
+.sidebarB ul li a { 
+    color: #474747; 
+}
+.sidebarB ul li a.active { 
+    color: #aa9144; 
+}
+.sidebarB ul li a:hover { 
+    color: #aa9144; 
+}
+
+.sidebarB-search .input-group-addon { 
+    color: #fff; 
+    text-align: center; 
+    background-color: #aa9144; 
+    border: 1px solid #aa9144; 
+    border-left: transparent; 
+}
+
+.sidebarB-recent-post li { 
+    margin-bottom: 10px; 
+    border-bottom: 1px solid #cecbc7;  
+    padding-bottom: 10px;
+}
+.sidebarB-recent-post li:last-child{
+    border-bottom: 1px solid transparent;
+}
+
+.sidebarB-recent-post .meta{
+    margin-bottom: 0px;
+}
+
+.sidebarB-title{
+    font-size: 12px; 
+    line-height: 18px;
+}
+
+.sidebarB-tags a { 
+    border: 1px solid #cecbc7; 
+    padding: 2px 10px; 
+    display: inline-block; 
+    background-color: #fff; 
+    font-size: 12px; 
+    text-transform: uppercase; 
+    margin-bottom: 5px; 
+    margin-right: 3px; 
+    border-radius: 50px; 
+    color: #18150d; 
+}
+
+.sidebarB-tags a:hover { 
+    background-color: #aa9144; 
+    color: #fff;  
+    border: 1px solid #aa9144; 
+}
+
+.sidebarB-call-to-action{
+    background-color: #eddba5;
+}
+
+.sidebarB-call-to-action .widget-title{
+    font-size: 20px; 
+    font-weight: 400; 
+    margin-bottom: 20px; 
+    line-height: 28px;
+}
+
+.sidebarB-call-to-action p{
+    font-size: 18px; 
+    color: #18150d;
+}
+
+.listnone { 
+    list-style: none; 
+    padding: 0px; 
+    
+}
+
+.recent-post-img {
+    margin-bottom: 20px; 
+    
+}
+
+.recent-title{
+    font-size: 12px; 
+    line-height: 18px;
+}
+
+.meta { 
+    font-size: 12px; 
+    text-transform: uppercase; 
+    margin-bottom: 20px; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.meta-date, .meta-author, .meta-comment, .meta-cat { 
+    display: inline-block;
+    margin-right: 10px;
+    
+}

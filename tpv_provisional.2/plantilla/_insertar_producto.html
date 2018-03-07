@@ -1,0 +1,42 @@
+{{header}}
+    <div style="max-width:400px;margin: 50px auto 0;">
+        <h1 class="h2 text-light text-center push-top-bottom animation-slideDown">
+            <i class="fa fa-pencil"></i> Ficha del producto
+        </h1>
+        <div class="block animation-fadeInQuickInv">
+            <form id="form-login" id="form-login" class="form-horizontal" method="post" action="?ruta=product&accion=doInsertarProducto" enctype="multipart/form-data">
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <label for="name">Nombre de producto:</label>
+                        <input class="form-control"  type="text" name="product" placeholder=""/>
+                    </div>
+                    
+                    <div class="col-xs-6">
+                        <label for="name">PVP/Unidad:</label>
+                        <input class="form-control"  type="text" name="price" placeholder=""/>
+                    </div>
+                    
+                    <div class="col-xs-6">
+                        <label for="name">Descripción:</label>
+                        <input class="form-control"  type="text" name="description" placeholder=""/>
+                    </div>
+                    
+                     <div class="col-xs-6">
+                    <label for="familia">Familia:</label>
+                    <select class="form-control" name="idfamily">
+                        <option value="1">Pan</option>
+                        <option value="2">Bollería</option>
+                        <option value="3">Croissantería</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                        <div class="col-xs-12 text-center">
+                    <input class="btn btn-effect-ripple btn-sm btn-primary" type="submit" value="Guardar"/>
+                    <input class="btn btn-effect-ripple btn-sm btn-danger" type="submit" formaction="?ruta=product&accion=listaProducto" value="Cancelar"/>
+                    </div>
+                </div>
+            </form>
+           </div>
+    </div>
+{{footer}}

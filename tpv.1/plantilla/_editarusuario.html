@@ -1,0 +1,111 @@
+{{header}}
+    <div style="max-width:500px;margin: 50px auto 0;">
+        <h1 class="h2 text-light text-center push-top-bottom animation-slideDown">
+            <i class="fa fa-pencil"></i> Editar datos de {{nombre}}
+        </h1>
+        <div class="block animation-fadeInQuickInv">
+            <div class="text-center"><a href="index.php?ruta=index&accion=veravatar" data-toggle="lightbox-image"><img class="foto_avastar" src="index.php?ruta=index&accion=veravatar"></a></div>
+                <form action="index.php" method="POST" enctype="multipart/form-data" id="form-login" class="form-horizontal">
+                    <input type="hidden" name="ruta" value="index" />
+                    <input type="hidden" name="accion" value="subirfoto" />
+                    <div class="col-xs-12">
+                        <br>
+                        <label for="avastar">Subir nuevo avatar:</label>
+                        <input id="avastar" type="file" name="foto" value="" /><br>
+                        <input class="btn btn-effect-ripple btn-primary" type="submit" value="subir avatar" />
+                    </div>
+                </form>
+                <br><br><br><br><br><br>
+                <hr/>
+            <form method="post" action="index.php?accion=doeditarusuario&ruta=index" id="form-login" class="form-horizontal">
+                <input type="hidden" name="id" value="{{id}}"/>
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <label for="nombre">Nombre:</label>
+                        <input id="nombre" class="form-control" type="text" name="nombre" value="{{nombre}}"/>
+                    </div>
+                    <div class="col-xs-6">
+                        <label for="apellidos">Apellidos:</label>
+                        <input id="apellidos" class="form-control" type="text" name="apellidos" value="{{apellidos}}"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <label for="usuario">Usuario:</label>
+                        <input id="usuario" class="form-control" type="text" name="nombreusuario" value="{{nombreusuario}}"/>
+                    </div>
+                    <div class="col-xs-6">
+                        <label for="correo">Correo:</label>
+                        <input id="correo" class="form-control" type="text" name="correo" value="{{correo}}"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <label for="claveAnterior">Introduzca su clave anterior:</label>
+                        <input id="claveAnterior" class="form-control"  type="password" name="claveAnterior" placeholder="Introduzca su clave anterior"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <label for="clave">Introduzca su clave:</label>
+                        <input id="clave" class="form-control"  type="password" name="clave" placeholder="Introduzca su clave"/>
+                    </div>
+                   <div class="col-xs-6">
+                        <label for="claveRepetida">Introduzca su clave repetida:</label>
+                        <input id="claveRepetida" class="form-control"  type="password" name="claveRepetida" placeholder="Introduzca su clave repetida"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12 text-center">
+                        <input type="hidden" name="tipo" value="{{tipo}}"/>
+                        <input type="hidden" name="verificado" value="{{verificado}}"/>
+                        <input class="btn btn-effect-ripple btn-primary" type="submit" value="Guardar"/>
+                        <input class="btn btn-effect-ripple btn-danger" type='submit' value='Cancelar' formAction='index.php'/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+    
+    
+{{footer}}
+
+<!--
+{{header}}
+    <div style="max-width:400px;margin: 120px auto 0;">
+        <h1 class="h2 text-light text-center push-top-bottom animation-slideDown">
+            <i class="fa fa-pencil"></i> Editar {{nombre}}
+        </h1>
+        <div class="block animation-fadeInQuickInv">
+            <form  action="index.php?accion=doeditarusuarioadministrador&ruta=index" method="post" id="form-login" class="form-horizontal">
+                <input type="hidden" name="id" value="{{id}}"/><br>
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" class="form-control" type="text" name="nombre" value="{{nombre}}"/><br>
+                <label for="apellidos">Apellidos:</label>
+                <input id="apellidos" class="form-control" type="text" name="apellidos" value="{{apellidos}}"/><br>
+                <label for="usuario">Usuario:</label>
+                <input id="usuario" class="form-control" type="text" name="nombreusuario" value="{{nombreusuario}}"/><br>
+                <label for="correo">Correo:</label>
+                <input id="correo" class="form-control" type="text" name="correo" value="{{correo}}"/><br>
+                <label for="clave">Contraseña:</label>
+                <input id="clave" class="form-control" type="text" name="clave" placeholder="Nueva clave"/><br>
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <label for="tipo">Tipo:</label>
+                        <input id="tipo" class="form-control" type="text" name="tipo" value="{{tipo}}"/><br>
+                    </div>
+                    <div class="col-xs-6">
+                        <label for="verificado">Verificado:</label>
+                        <input id="verificado" class="form-control" type="text" name="verificado" value="{{verificado}}"/><br>
+                    </div>
+                </div>
+                <div class="col-xs-12 text-center">
+                    <input class="btn btn-primary" type="submit" value="Editar"/>
+                </div>
+            </form>
+        </div>
+    </div>
+{{footer}}
+-->

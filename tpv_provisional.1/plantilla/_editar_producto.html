@@ -1,0 +1,35 @@
+{{header}}
+    <div style="max-width:400px;margin: 50px auto 0;">
+        <h1 class="h2 text-light text-center push-top-bottom animation-slideDown">
+            <i class="fa fa-pencil"></i> Ficha de producto de {{product}}
+        </h1>
+        <div class="block animation-fadeInQuickInv">
+            <form  action="index.php?accion=doeditarProducto&ruta=product" method="post" id="form-login" class="form-horizontal">
+                <input type="hidden" name="id" value="{{id}}"/><br>
+                
+                <label for="product">Nombre de producto:</label>
+                <input id="product" class="form-control" type="text" name="product" value="{{product}}"/><br>
+                
+                <label for="price">PVP/Unidad:</label>
+                <input id="price" class="form-control" type="text" name="price" value="{{price}}"/><br>
+                
+                <label for="description">Descripción:</label>
+                <input id="description" class="form-control" type="text" name="description" value="{{description}}"/><br>
+                
+                <label for="idfamily">Familia:</label>
+                    <select class="form-control" name="idfamily">
+                        <option value="{{idfamily}}">{{idfamily}}</option>
+                        <option value="1">Pan</option>
+                        <option value="2">Bollería</option>
+                        <option value="3">Croissantería</option>
+                    </select>
+                <div class="form-group">
+                    <div class="col-xs-12 text-center">
+                        <input class="btn btn-primary" type="submit" value="Editar"/>
+                        <input class="btn btn-danger" type="submit" formaction="?ruta=product&accion=listaProducto" value="Cancelar"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{{footer}}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Allura');
+@font-face {
+    font-family: 'buttercup';
+    src: url('/wp-content/themes/Bakery/img/recursos/tipografias/buttercup.woff2') format('woff2'),
+         url('/wp-content/themes/Bakery/img/recursos/tipografias/buttercup.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LyonTextRegular';
+    src: url('/wp-content/themes/Bakery/img/recursos/tipografias/LyonTextRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Serveticac';
+    src: url('/wp-content/themes/Bakery/img/recursos/tipografias/Serveticac.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeosansLight';
+    src: url('/wp-content/themes/Bakery/img/recursos/tipografias/GeosansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url('/wp-content/themes/Bakery/img/recursos/tipografias/CaviarDreams.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

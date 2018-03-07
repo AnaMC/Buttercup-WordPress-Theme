@@ -1,0 +1,18 @@
+:root{
+    --color-000: #132d50;
+    --color-001: #CDB380;
+    --color-002: #C5E0DC;
+}
+.b0{ border: 5px solid black;   }
+.b1{ border: 5px solid red;     }
+.b2{ border: 5px solid green;   }
+.b3{ border: 5px solid blue;    }
+.b4{ border: 5px solid yellow;  }
+.b5{ border: 5px solid magenta; }
+
+.text-color-00{color:var(--color-000);}
+.text-color-01{color:var(--color-001);}
+
+a, a:hover{ color: var(--color-00); }
+
+

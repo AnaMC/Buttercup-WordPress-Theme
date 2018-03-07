@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Ajax</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/ajax/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/ajax/tpv.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    <h1>Producto</h1>
+    <form>
+      <h1>insertar producto</h1>
+      <input type="hidden" name="ruta" value="product"/>
+      <input type="hidden" name="accion" value="doinsert"/>
+      <input type="text" name="idfamily" placeholder="idfamily"/>
+      <input type="text" name="product" placeholder="product"/>
+      <input type="text" name="price" placeholder="price"/>
+      <input type="text" name="description" placeholder="description"/>
+      <button type="submit">Enviar</button>
+    </form>
+    
+    <form>
+      <h1>editar producto</h1>
+      <input type="hidden" name="ruta" value="product"/>
+      <input type="hidden" name="accion" value="doedit"/>
+      <input type="text" name="id" placeholder="id"/>
+      <input type="text" name="idfamily" placeholder="idfamily"/>
+      <input type="text" name="product" placeholder="product"/>
+      <input type="text" name="price" placeholder="price"/>
+      <input type="text" name="description" placeholder="description"/>
+      <button type="submit">Enviar</button>
+    </form>
+
+        <h1>Clientes</h1></h1>
+          <h1>insertar cliente</h1></h1>
+          <form action="index.php?ruta=client&accion=doinsert" method="post">
+            <div class="col-xs-6">
+              <input class="form-control"  type="text" name="name" placeholder="Nombre"/>
+            </div>
+            <div class="col-xs-6">
+              <input class="form-control"  type="text" name="surname" placeholder="Apellidos"/>
+            </div>
+            <div class="col-xs-6">
+              <input class="form-control"  type="text" name="tin" placeholder="CIF"/>
+            </div>
+            <div class="col-xs-6">
+              <input class="form-control"  type="text" name="address" placeholder="Dirección"/>
+            </div>
+            <div class="col-xs-6">
+              <input class="form-control"  type="text" name="location" placeholder="Población"/>
+            </div>
+            <div class="col-xs-6">
+              <input class="form-control"  type="text" name="province" placeholder="Provincia"/>
+            </div>
+            <div class="col-xs-6">
+              <input class="form-control"  type="text" name="postalcode" placeholder="Codigo Postal"/>
+            </div>
+            <div class="col-xs-6">
+              <input class="form-control"  type="text" name="email" placeholder="Correo"/>
+            </div>
+            </div>
+            <div class="col-xs-12 text-center">
+              <input class="btn btn-effect-ripple btn-sm btn-primary" type="submit" value="Guardar"/>
+              <input class="btn btn-effect-ripple btn-sm btn-danger" type="submit" formaction="?ruta=client&accion=listaCliente" value="Cancelar"/>
+            </div>
+
+          </form>
+          
+          <h1>Clientes</h1></h1>
+          <h1>editar cliente</h1></h1>
+          <form action="index.php?ruta=client&accion=doedit" method="post">
+            <div class="col-xs-6">
+              <input class="form-control"  type="text" name="name" placeholder="Nombre"/>
+            </div>
+            <div class="col-xs-6">
+              <input class="form-control"  type="text" name="surname" placeholder="Apellidos"/>
+            </div>
+            <div class="col-xs-6">
+              <input class="form-control"  type="text" name="tin" placeholder="CIF"/>
+            </div>
+            <div class="col-xs-6">
+              <input class="form-control"  type="text" name="address" placeholder="Dirección"/>
+            </div>
+            <div class="col-xs-6">
+              <input class="form-control"  type="text" name="location" placeholder="Población"/>
+            </div>
+            <div class="col-xs-6">
+              <input class="form-control"  type="text" name="province" placeholder="Provincia"/>
+            </div>
+            <div class="col-xs-6">
+              <input class="form-control"  type="text" name="postalcode" placeholder="Codigo Postal"/>
+            </div>
+            <div class="col-xs-6">
+              <input class="form-control"  type="text" name="email" placeholder="Correo"/>
+            </div>
+            </div>
+            <div class="col-xs-12 text-center">
+              <input class="btn btn-effect-ripple btn-sm btn-primary" type="submit" value="Guardar"/>
+              <input class="btn btn-effect-ripple btn-sm btn-danger" type="submit" formaction="?ruta=client&accion=listaCliente" value="Cancelar"/>
+            </div>
+
+          </form>
+          
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/ajax/ajax.js"></script>
+    
+  </body>
+</html>

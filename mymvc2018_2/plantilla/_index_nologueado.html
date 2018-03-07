@@ -1,0 +1,106 @@
+{{header}}
+	        <div style="max-width:600px;margin: 50px auto 0;">
+            <h1 class="h2 text-light text-center push-top-bottom animation-slideDown">
+                <i class="fa fa-unlock"></i> No estás logueado
+            </h1>
+            <h2 class="h2 text-light text-center push-top-bottom animation-slideDown">{{mensaje}}</h2>
+            <div class="block animation-fadeInQuickInv">
+                <div id="exampleAccordion" data-children=".item">
+                    <div class="item">
+                        <h1><a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion1" role="button" aria-expanded="true" aria-controls="exampleAccordion1">Login</a></h1>
+                        <div id="exampleAccordion1" class="collapse in" role="tabpanel">
+                            <form id="form-login" class="form-horizontal" method="post">
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <input class="form-control" type="text" name="correo" placeholder="Correo o usuario"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <input class="form-control" type="password" name="clave" placeholder="Contraseña"/>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="accion" value="login">
+                                <input type="hidden" name="ruta" value="index">
+                                <div class="col-xs-12 text-center">
+                                    <input class="btn btn-effect-ripple btn-sm btn-primary" type="submit" value="ACCESO"/>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h1><a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion2" role="button" aria-expanded="false" aria-controls="exampleAccordion2">Registro</a></h1>
+                        <div id="exampleAccordion2" class="collapse" role="tabpanel">
+                            <form id="form-login" class="form-horizontal" method="post">
+                                <div class="form-group">
+                                    <div class="col-xs-6">
+                                        <input class="form-control"  type="text" name="nombre" placeholder="Nombre"/>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <input class="form-control"  type="text" name="apellidos" placeholder="Apellidos"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-6">
+                                        <input class="form-control"  type="text" name="nombreusuario" placeholder="Usuario"/>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <input class="form-control"  type="text" name="correo" placeholder="Correo"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-6">
+                                        <input class="form-control"  type="password" name="clave" placeholder="Contraseña"/>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <input class="form-control"  type="password" name="claveRepetida" placeholder="Contraseña repetida"/>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="accion" value="registro">
+                                <input type="hidden" name="ruta" value="index">
+                                <div class="col-xs-12 text-center">
+                                    <input class="btn btn-effect-ripple btn-sm btn-primary" type="submit" value="ALTA"/>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="item">
+                    <h1><a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion3" role="button" aria-expanded="false" aria-controls="exampleAccordion3">Restablecer tu contraseña </a></h1>
+                        <div id="exampleAccordion3" class="collapse" role="tabpanel">
+                            <form id="form-login" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <input  class="form-control" type="text" name="correo" placeholder="Correo"/>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="accion" value="recuperar">
+                                <input type="hidden" name="ruta" value="index">
+                                <div class="col-xs-12 text-center">
+                                    <input class="btn btn-effect-ripple btn-sm btn-primary"  type="submit" value="RESTABLECER"/>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h1><a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion4" role="button" aria-expanded="false" aria-controls="exampleAccordion4">Reenviar correo activación</a></h1>
+                        <div id="exampleAccordion4" class="collapse" role="tabpanel">
+                            <form id="form-login" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <input  class="form-control" type="text" name="correo" placeholder="Correo"/>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="accion" value="reenviarCorreoActivacion">
+                                <input type="hidden" name="ruta" value="index">
+                                <div class="form-group">
+                                    <div class="col-xs-12 text-center">
+                                        <input  class="btn btn-effect-ripple btn-sm btn-primary" type="submit" value="REENVIAR"/>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{{footer}}

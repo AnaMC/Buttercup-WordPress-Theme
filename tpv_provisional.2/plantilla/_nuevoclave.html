@@ -1,0 +1,28 @@
+{{header}}
+    <div style="max-width:500px;margin: 150px auto 0;">
+        <h1 class="h2 text-light text-center push-top-bottom animation-slideDown">
+            <i class="fa fa-user-plus"></i> Nueva contraseña
+        </h1>
+        <div class="block animation-fadeInQuickInv">
+            <form  action="index.php?accion=doNuevoClave&ruta=index" method="post" id="form-login" class="form-horizontal">
+                <input type="hidden" name="correooculta" value="{{correo}}"/>
+                <input type="hidden" name="data" value="{{data}}"/>
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <label for="clave">Nueva contraseña:</label>
+                        <input id="clave" class="form-control" type="password" name="nuevoclave" placeholder="Nueva Contraseña"/>
+                    </div>
+                    <div class="col-xs-6">
+                        <label for="clave">Contraseña Repetida:</label>
+                        <input id="clave" class="form-control" type="password" name="repetidaclave" placeholder="Contraseña repetida"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12 text-center">
+                        <input class="btn btn-primary" type="submit" value="Guardar"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{{footer}}

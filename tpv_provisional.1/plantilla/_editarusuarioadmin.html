@@ -1,0 +1,44 @@
+{{header}}
+    <div style="max-width:400px;margin: 50px auto 0;">
+        <h1 class="h2 text-light text-center push-top-bottom animation-slideDown">
+            <i class="fa fa-pencil"></i> Editar {{nombre}}
+        </h1>
+        <div class="block animation-fadeInQuickInv">
+            <form  action="index.php?accion=doeditarusuarioadministrador&ruta=index" method="post" id="form-login" class="form-horizontal">
+                <input type="hidden" name="id" value="{{id}}"/><br>
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" class="form-control" type="text" name="nombre" value="{{nombre}}"/><br>
+                <label for="apellidos">Apellidos:</label>
+                <input id="apellidos" class="form-control" type="text" name="apellidos" value="{{apellidos}}"/><br>
+                <label for="usuario">Usuario:</label>
+                <input id="usuario" class="form-control" type="text" name="nombreusuario" value="{{nombreusuario}}"/><br>
+                <label for="correo">Correo:</label>
+                <input id="correo" class="form-control" type="text" name="correo" value="{{correo}}"/><br>
+                <label for="clave">Contraseña:</label>
+                <input id="clave" class="form-control" type="password" name="clave" placeholder="Nueva clave"/><br>
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <label for="tipo">Tipo:</label>
+                        <!--<input id="tipo" class="form-control" type="text" name="tipo" value="{{tipo}}"/><br>-->
+                    <select class="form-control" name="tipo">
+                        <option value="{{tipo}}">{{tipo}}</option>
+                        <option value="normal">Normal</option>
+                        <option value="avanzado">Avanzado</option>
+                        <option value="administrador">Administrador</option>
+                    </select>
+                    </div>
+                    <div class="col-xs-6 text-center">
+                        <label for="checkbox">Verificado:</label><br>
+                        <label class="switch switch-primary"><input id="checkbox" type="checkbox" name="checkboxVerificado" value="1" {{checked}}><span></span></label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12 text-center">
+                        <input class="btn btn-primary" type="submit" value="Editar"/>
+                        <input class="btn btn-danger" type="submit" formaction="?accion=administrar" value="Cancelar"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{{footer}}

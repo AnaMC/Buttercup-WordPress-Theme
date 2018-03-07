@@ -1,0 +1,184 @@
+.linkPost{
+    color: black;
+}
+
+.linkPost:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.linkrelated:hover{
+    text-decoration: none;
+}
+
+.photo_author{
+    border-radius: 50%;
+    float: right;
+    margin-top: 2.5%;
+    margin-right: 5%;
+}
+
+.indexAvatar{
+    display: fixed;
+    margin-top: -2.75%;
+    margin-right: 25%;
+}
+
+.img-custom{
+    width:100%; 
+    height: 40%;
+    object-fit: cover;
+}
+
+.img-post{
+    width:100%;
+    object-fit: cover;
+}
+
+.img-related{
+    width:100%; 
+    height: 90%;
+    object-fit: cover;
+}
+
+.img-postDestacado{
+    width: 100%;
+    height: 400px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.separador{
+    height: 100px;
+}
+
+.tituloPost{
+    color: #128f76;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.singleImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloSingle{
+    font-size: 4em;
+    color: white;
+}
+
+.tituloPost:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.infoPost{
+    float: right;
+}
+
+.infoPost > span {
+    padding-left: 20px;
+}
+
+.infoPostLeft > span{
+    padding-right: 20px;
+}
+
+.formFields{
+    display: flex;
+    width: 100%;
+    flex-wrap:wrap;
+}
+
+.formFields > input {
+    flex:1;
+}
+
+.textarea{
+    width: 100%;
+}
+/*-------------------------------------------------------------------------*/
+.sidebarsection {
+    background-color: var(--color-000);
+    padding:  20px;
+    margin-bottom: 10px;
+    color: var(--color-001);
+    border-radius: 20px;
+    list-style: none;
+}
+.sidebarsection li {
+    margin-left:  10px;
+    margin-top: 8px;
+}
+.sidebarsection li a      { color: var(--color-001); }
+.sidebarsection li a:hover{ color: var(--color-ff); }
+
+.sidebarsection.sidebarsection-autor li,
+.sidebarsection.sidebarsection-cat li{
+    display:  flex;
+    margin-right: 20px;
+}
+.sidebarsection.sidebarsection-autor a,
+.sidebarsection.sidebarsection-cat a{
+    flex: 1 0 0;
+}
+img.avatar.avatar-96.photo.photo-author-destacado {
+    
+}
+img.avatar.avatar-100.photo.photo-author-destacado {
+    position:  absolute;
+    right: 10%;
+    bottom: -10%;
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+}
+a.tituloPost {
+    color: var(--color-000);
+}
+.col-md-12.border-bottom.pb-4 {
+    border-bottom: 1px solid #1d66af!important;
+}
+.destacado-post-border {
+    border-bottom: 1px solid #222;
+    padding-bottom: 20px;
+}
+/*---------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+/*-------------------------------single--------------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+
+#single .bg-primary{
+    background-color: var(--color-000) !important;
+}
+#single h1{ color:var(--color-001);text-transform:uppercase;}
+
+
+#single-custom h1,
+#single-custom h2{
+    color: var(--color-001);
+}
+#single-custom .b3{
+    border: 1px solid var(--color-001) !important;
+    padding: 40px;
+}
+#single-custom .b2{
+    border: 1px solid var(--color-001) !important;                                       /* que quieres ¿?*/
+    padding: 40px;
+    border-right: none !important;
+}
+
+.a-capitalize a{ 
+    text-transform: lowercase;
+    text-transform: capitalize; }
